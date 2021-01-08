@@ -1,0 +1,647 @@
+2021-01-06 19:54:48 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 19:54:48 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 19:54:48 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 19:54:48 [scrapy.extensions.telnet] INFO: Telnet Password: 4bf2b438c86a08e0
+2021-01-06 19:54:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 19:54:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 19:54:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 19:54:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 19:54:49 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 19:54:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 19:54:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 19:54:50 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 19:54:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1560,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 8139,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 1.496628,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 11, 54, 50, 543047),
+ 'item_scraped_count': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 60612608,
+ 'memusage/startup': 60612608,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2021, 1, 6, 11, 54, 49, 46419)}
+2021-01-06 19:54:50 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 19:57:28 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 19:57:28 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 19:57:28 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 19:57:28 [scrapy.extensions.telnet] INFO: Telnet Password: fc43817e06b6ecbe
+2021-01-06 19:57:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 19:57:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 19:57:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 19:57:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 19:57:28 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 19:57:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 19:57:28 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 19:57:28 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/home/ftserver/appCrawler/appCrawler/spiders/miguMusic.py", line 45, in start_requests
+    self.log("search : %s" % (url), loglevel='INFO')
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 46, in log
+    self.logger.log(level, message, **kw)
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1717, in log
+    self.logger.log(level, msg, *args, **kwargs)
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1398, in log
+    self._log(level, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'loglevel'
+2021-01-06 19:57:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 19:57:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.15875,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 11, 57, 28, 960772),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 60760064,
+ 'memusage/startup': 60760064,
+ 'start_time': datetime.datetime(2021, 1, 6, 11, 57, 28, 802022)}
+2021-01-06 19:57:28 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 19:58:19 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 19:58:19 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 19:58:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 19:58:19 [scrapy.extensions.telnet] INFO: Telnet Password: 8765ad751a19e1b6
+2021-01-06 19:58:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 19:58:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 19:58:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 19:58:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 19:58:19 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 19:58:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 19:58:19 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 19:58:19 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1573, in isEnabledFor
+    return self._cache[level]
+KeyError: 'INFO'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/home/ftserver/appCrawler/appCrawler/spiders/miguMusic.py", line 45, in start_requests
+    self.log("search : %s" % (url), level='INFO')
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 46, in log
+    self.logger.log(level, message, **kw)
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1715, in log
+    if self.isEnabledFor(level):
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1723, in isEnabledFor
+    return self.logger.isEnabledFor(level)
+  File "/home/ftserver/anaconda3/lib/python3.7/logging/__init__.py", line 1576, in isEnabledFor
+    if self.manager.disable >= level:
+TypeError: '>=' not supported between instances of 'int' and 'str'
+2021-01-06 19:58:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 19:58:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.158289,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 11, 58, 19, 317135),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 60596224,
+ 'memusage/startup': 60596224,
+ 'start_time': datetime.datetime(2021, 1, 6, 11, 58, 19, 158846)}
+2021-01-06 19:58:19 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 19:59:16 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 19:59:16 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 19:59:16 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 19:59:16 [scrapy.extensions.telnet] INFO: Telnet Password: 90056d82df3bb1d8
+2021-01-06 19:59:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 19:59:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 19:59:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 19:59:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 19:59:16 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 19:59:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 19:59:16 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 19:59:16 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/home/ftserver/appCrawler/appCrawler/spiders/miguMusic.py", line 45, in start_requests
+    self.log("search : %s" % (url), level=INFO)
+NameError: name 'INFO' is not defined
+2021-01-06 19:59:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 19:59:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.15955,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 11, 59, 16, 610236),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 60485632,
+ 'memusage/startup': 60485632,
+ 'start_time': datetime.datetime(2021, 1, 6, 11, 59, 16, 450686)}
+2021-01-06 19:59:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 20:00:36 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:00:36 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:00:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:00:36 [scrapy.extensions.telnet] INFO: Telnet Password: ca6e1b2008d5fea6
+2021-01-06 20:00:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:00:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:00:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:00:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:00:36 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:00:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 20:00:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 20:00:37 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/home/ftserver/appCrawler/appCrawler/spiders/miguMusic.py", line 45, in start_requests
+    self.log("search : %s" % (url), level=self.log.INFO)
+AttributeError: 'function' object has no attribute 'INFO'
+2021-01-06 20:00:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 20:00:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.160837,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 12, 0, 37, 40426),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 60563456,
+ 'memusage/startup': 60563456,
+ 'start_time': datetime.datetime(2021, 1, 6, 12, 0, 36, 879589)}
+2021-01-06 20:00:37 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 20:03:03 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:03:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:03:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:03:03 [scrapy.extensions.telnet] INFO: Telnet Password: 4346c9363eca079a
+2021-01-06 20:03:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:03:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:03:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:03:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:03:03 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:03:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 20:03:03 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 20:03:03 [miguMusic] INFO: search : https://m.music.migu.cn/migu/remoting/scr_search_tag?rows=20&type=4&keyword=%E9%9D%92%E8%8A%B1%E7%93%B7&pgc=1
+2021-01-06 20:03:04 [miguMusic] INFO: parse search
+2021-01-06 20:03:04 [miguMusic] INFO: process albumid 1125329686
+2021-01-06 20:03:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 20:03:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1560,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 7850,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 1.279669,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 12, 3, 4, 505838),
+ 'item_scraped_count': 1,
+ 'log_count/INFO': 13,
+ 'memusage/max': 60493824,
+ 'memusage/startup': 60493824,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2021, 1, 6, 12, 3, 3, 226169)}
+2021-01-06 20:03:04 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 20:41:12 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:41:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:41:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:41:12 [scrapy.extensions.telnet] INFO: Telnet Password: 13e83494f0149639
+2021-01-06 20:41:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:41:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:41:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:41:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:41:12 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:41:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-01-06 20:41:12 [scrapy.core.engine] ERROR: Scraper close failure
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+NameError: name 'loging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/ftserver/appCrawler/appCrawler/pipelines.py", line 55, in close_spider
+    spider.log("------spider close------", level=loging.INFO)
+NameError: name 'loging' is not defined
+2021-01-06 20:41:12 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x7f6caa964da0>>
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+NameError: name 'loging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/extensions/corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-01-06 20:41:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'log_count/ERROR': 2, 'log_count/INFO': 8}
+2021-01-06 20:41:12 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2021-01-06 20:41:12 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-01-06 20:41:12 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-01-06 20:41:12 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+NameError: name 'loging' is not defined
+2021-01-06 20:41:12 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/home/ftserver/anaconda3/lib/python3.7/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+NameError: name 'loging' is not defined
+2021-01-06 20:42:05 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:42:05 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:42:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:42:05 [scrapy.extensions.telnet] INFO: Telnet Password: 1c4d584d9279247a
+2021-01-06 20:42:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:42:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:42:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:42:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:42:05 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:42:05 [weread] INFO: ------spider start------
+2021-01-06 20:42:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 20:42:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 20:42:05 [weread] INFO: search : https://weread.qq.com/web/search/global?keyword=%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B&maxIdx=0&fragmentSize=120&count=10
+2021-01-06 20:42:06 [weread] INFO: parse search
+2021-01-06 20:42:06 [weread] INFO: process albumid 478670
+2021-01-06 20:42:06 [weread] INFO: process item: 478670
+2021-01-06 20:42:06 [weread] INFO: insert into cpm_keywords_grab (keyword_id,keyword,creator,source_id,name,artist,finished,fav_num,created_at,source_name) values ("3","全职高手","蝴蝶蓝","478670","全职高手","蝴蝶蓝","1","89","2021-01-06 20:42:06","weread") ON DUPLICATE KEY UPDATE keyword_id="3",keyword="全职高手",creator="蝴蝶蓝",source_id="478670",name="全职高手",artist="蝴蝶蓝",finished="1",fav_num="89",source_name="weread"
+2021-01-06 20:42:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 20:42:06 [weread] INFO: ------spider close------
+2021-01-06 20:42:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 414,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 3789,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.478156,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 12, 42, 6, 249274),
+ 'item_scraped_count': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 60637184,
+ 'memusage/startup': 60637184,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 6, 12, 42, 5, 771118)}
+2021-01-06 20:42:06 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 20:44:20 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:44:20 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:44:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:44:20 [scrapy.extensions.telnet] INFO: Telnet Password: 0138665c420adac5
+2021-01-06 20:44:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:44:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:44:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:44:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:44:20 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:44:20 [weread] INFO: ------spider start------
+2021-01-06 20:44:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 20:44:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 20:44:20 [weread] INFO: search : https://weread.qq.com/web/search/global?keyword=%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B&maxIdx=0&fragmentSize=120&count=10
+2021-01-06 20:44:20 [weread] INFO: parse search
+2021-01-06 20:44:20 [weread] INFO: process albumid 478670
+2021-01-06 20:44:20 [weread] INFO: process item: 478670
+2021-01-06 20:44:20 [weread] INFO: insert into cpm_keywords_grab (keyword_id,keyword,creator,source_id,name,artist,finished,fav_num,intro,created_at,source_name) values ("3","全职高手","蝴蝶蓝","478670","全职高手","蝴蝶蓝","1","89","　　网游荣耀中被誉为教科书级别的顶尖高手，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。 　　=================================== 　　","2021-01-06 20:44:20","weread") ON DUPLICATE KEY UPDATE keyword_id="3",keyword="全职高手",creator="蝴蝶蓝",source_id="478670",name="全职高手",artist="蝴蝶蓝",finished="1",fav_num="89",intro="　　网游荣耀中被誉为教科书级别的顶尖高手，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。 　　=================================== 　　",source_name="weread"
+2021-01-06 20:44:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 20:44:20 [weread] INFO: ------spider close------
+2021-01-06 20:44:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 414,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 3790,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.458033,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 12, 44, 20, 713549),
+ 'item_scraped_count': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 60596224,
+ 'memusage/startup': 60596224,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 6, 12, 44, 20, 255516)}
+2021-01-06 20:44:20 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-01-06 20:45:12 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: appCrawler)
+2021-01-06 20:45:12 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 18.7.0, Python 3.7.0 (default, Jun 28 2018, 13:15:42) - [GCC 7.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.3.1, Platform Linux-4.4.198-1.el6.elrepo.x86_64-x86_64-with-centos-6.10-Final
+2021-01-06 20:45:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'appCrawler',
+ 'LOG_FILE': 'log/scrapy_2021_1_6.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'appCrawler.spiders',
+ 'SPIDER_MODULES': ['appCrawler.spiders']}
+2021-01-06 20:45:12 [scrapy.extensions.telnet] INFO: Telnet Password: 133510132b77cd3c
+2021-01-06 20:45:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-06 20:45:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-06 20:45:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-06 20:45:12 [scrapy.middleware] INFO: Enabled item pipelines:
+['appCrawler.pipelines.MysqlUpdatePipeline']
+2021-01-06 20:45:12 [scrapy.core.engine] INFO: Spider opened
+2021-01-06 20:45:12 [weread] INFO: ------spider start------
+2021-01-06 20:45:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-06 20:45:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-06 20:45:13 [weread] INFO: search : https://weread.qq.com/web/search/global?keyword=%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B&maxIdx=0&fragmentSize=120&count=10
+2021-01-06 20:45:13 [weread] INFO: parse search
+2021-01-06 20:45:13 [weread] INFO: process albumid 478670
+2021-01-06 20:45:13 [weread] INFO: process item: 478670
+2021-01-06 20:45:13 [weread] INFO: insert into cpm_keywords_grab (keyword_id,keyword,creator,source_id,name,artist,finished,fav_num,intro,created_at,source_name) values ("3","全职高手","蝴蝶蓝","478670","全职高手","蝴蝶蓝","1","89","　　网游荣耀中被誉为教科书级别的顶尖高手，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。 　　=================================== 　　","2021-01-06 20:45:13","weread") ON DUPLICATE KEY UPDATE keyword_id="3",keyword="全职高手",creator="蝴蝶蓝",source_id="478670",name="全职高手",artist="蝴蝶蓝",finished="1",fav_num="89",intro="　　网游荣耀中被誉为教科书级别的顶尖高手，因为种种原因遭到俱乐部的驱逐，离开职业圈的他寄身于一家网吧成了一个小小的网管，但是，拥有十年游戏经验的他，在荣耀新开的第十区重新投入了游戏，带着对往昔的回忆，和一把未完成的自制武器，开始了重返巅峰之路。 　　=================================== 　　",source_name="weread"
+2021-01-06 20:45:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-06 20:45:13 [weread] INFO: ------spider close------
+2021-01-06 20:45:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 414,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 3791,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.448224,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 6, 12, 45, 13, 438536),
+ 'item_scraped_count': 1,
+ 'log_count/INFO': 17,
+ 'memusage/max': 60751872,
+ 'memusage/startup': 60751872,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 1, 6, 12, 45, 12, 990312)}
+2021-01-06 20:45:13 [scrapy.core.engine] INFO: Spider closed (finished)
