@@ -171,5 +171,6 @@ class MigumusicSpider(scrapy.Spider):
         item["play_num"] = results["userOpNums"][0]["opNumItem"]["playNum"]
         item["sub_num"] = results["userOpNums"][0]["opNumItem"]["subscribeNum"]
         item["created_at"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        item["cdate"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-01'))
         yield item
         pass

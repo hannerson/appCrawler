@@ -75,6 +75,7 @@ class MigumusicSpider(scrapy.Spider):
             for k,v in extra.items():
                 item[k] = v
             item["created_at"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            item["cdate"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-01'))
             yield item
             #break
             pass

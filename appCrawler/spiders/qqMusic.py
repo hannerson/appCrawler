@@ -115,5 +115,6 @@ class QQMusicSpider(scrapy.Spider):
         item["intro"] = results["data"]["desc"].replace("\t"," ").replace("\r\n","").replace("\n","")
         item["fee_type"] = self.check_qq_pay(results["data"]["list"])
         item["created_at"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        item["cdate"] = "%s" % (datetime.datetime.now().strftime('%Y-%m-01'))
         yield item
         pass
